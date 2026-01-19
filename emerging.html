@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Automated Systems – Sensor Quiz</title>
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      background:#f4f6fb;
+      padding:20px;
+    }
+    h1{
+      text-align:center;
+      color:#4a148c;
+    }
+    .quiz-box{
+      background:#fff;
+      border-radius:10px;
+      padding:20px;
+      margin-bottom:20px;
+      box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    }
+    .question{
+      font-weight:bold;
+      margin-bottom:10px;
+    }
+    .option{
+      border:2px solid #ccc;
+      border-radius:6px;
+      padding:10px;
+      margin:8px 0;
+      cursor:pointer;
+      transition:0.3s;
+    }
+    .option:hover{background:#f1f1f1;}
+    .correct{border-color:green;background:#e8f5e9;color:green;}
+    .wrong{border-color:red;background:#fdecea;color:red;}
+    .symbol{float:right;font-weight:bold;font-size:18px;}
+  </style>
+</head>
+<body>
+
+<h1>🔹 Automated Systems – Sensor Quiz</h1>
+
+<!-- TEMPLATE: onclick="check(this,'CORRECT ANSWER')" -->
+
+<div class="quiz-box">
+  <div class="question">1. A robot wakes up only when someone claps their hands.</div>
+  <div class="option" onclick="check(this,'Acoustic sensor')">Acoustic sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Acoustic sensor')">Accelerometer <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Acoustic sensor')">Light sensor <span class="symbol"></span></div>
+</div>
+
+<div class="quiz-box">
+  <div class="question">2. A noise alarm starts ringing when loud sounds are detected.</div>
+  <div class="option" onclick="check(this,'Acoustic sensor')">Acoustic sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Acoustic sensor')">Gas sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Acoustic sensor')">Infrared sensor <span class="symbol"></span></div>
+</div>
+
+<div class="quiz-box">
+  <div class="question">3. A mobile phone screen rotates when you tilt the phone.</div>
+  <div class="option" onclick="check(this,'Accelerometer')">Accelerometer <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Accelerometer')">Gyroscope <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Accelerometer')">Proximity sensor <span class="symbol"></span></div>
+</div>
+
+<div class="quiz-box">
+  <div class="question">4. A fitness band counts the number of steps you walk.</div>
+  <div class="option" onclick="check(this,'Accelerometer')">Accelerometer <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Accelerometer')">Pressure sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Accelerometer')">Light sensor <span class="symbol"></span></div>
+</div>
+
+<div class="quiz-box">
+  <div class="question">5. An automatic water system measures water flow.</div>
+  <div class="option" onclick="check(this,'Flow sensor')">Flow sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Flow sensor')">Level sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Flow sensor')">Pressure sensor <span class="symbol"></span></div>
+</div>
+
+<div class="quiz-box">
+  <div class="question">6. A fuel pump measures fuel entering a vehicle.</div>
+  <div class="option" onclick="check(this,'Flow sensor')">Flow sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Flow sensor')">Gas sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Flow sensor')">Level sensor <span class="symbol"></span></div>
+</div>
+
+<div class="quiz-box">
+  <div class="question">7. LPG gas leak alarm in a kitchen.</div>
+  <div class="option" onclick="check(this,'Gas sensor')">Gas sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Gas sensor')">Smoke sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Gas sensor')">Humidity sensor <span class="symbol"></span></div>
+</div>
+
+<div class="quiz-box">
+  <div class="question">8. Factory monitors harmful gases.</div>
+  <div class="option" onclick="check(this,'Gas sensor')">Gas sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Gas sensor')">Pressure sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Gas sensor')">Infrared sensor <span class="symbol"></span></div>
+</div>
+
+<div class="quiz-box">
+  <div class="question">9. AC adjusts cooling based on moisture.</div>
+  <div class="option" onclick="check(this,'Humidity sensor')">Humidity sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Humidity sensor')">Temperature sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Humidity sensor')">Moisture sensor <span class="symbol"></span></div>
+</div>
+
+<div class="quiz-box">
+  <div class="question">10. Weather station measures atmospheric moisture.</div>
+  <div class="option" onclick="check(this,'Humidity sensor')">Humidity sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Humidity sensor')">Rain sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Humidity sensor')">Pressure sensor <span class="symbol"></span></div>
+</div>
+
+<div class="quiz-box">
+  <div class="question">11. Automatic doors open when a person approaches.</div>
+  <div class="option" onclick="check(this,'Infrared sensor')">Infrared sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Infrared sensor')">Proximity sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Infrared sensor')">Light sensor <span class="symbol"></span></div>
+</div>
+
+<div class="quiz-box">
+  <div class="question">12. Burglar alarm detects body heat.</div>
+  <div class="option" onclick="check(this,'Infrared sensor')">Infrared sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Infrared sensor')">Motion sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Infrared sensor')">Proximity sensor <span class="symbol"></span></div>
+</div>
+
+<div class="quiz-box">
+  <div class="question">13. Water tank stops filling when full.</div>
+  <div class="option" onclick="check(this,'Level sensor')">Level sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Level sensor')">Flow sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Level sensor')">Pressure sensor <span class="symbol"></span></div>
+</div>
+
+<div class="quiz-box">
+  <div class="question">14. Smart dustbin shows FULL.</div>
+  <div class="option" onclick="check(this,'Level sensor')">Level sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Level sensor')">Proximity sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Level sensor')">Infrared sensor <span class="symbol"></span></div>
+</div>
+
+<div class="quiz-box">
+  <div class="question">15. Street lights turn ON at night.</div>
+  <div class="option" onclick="check(this,'Light sensor')">Light sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Light sensor')">Infrared sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Light sensor')">Proximity sensor <span class="symbol"></span></div>
+</div>
+
+<div class="quiz-box">
+  <div class="question">16. Phone adjusts brightness automatically.</div>
+  <div class="option" onclick="check(this,'Light sensor')">Light sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Light sensor')">Temperature sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Light sensor')">Pressure sensor <span class="symbol"></span></div>
+</div>
+
+<div class="quiz-box">
+  <div class="question">17. Smartphone compass shows directions.</div>
+  <div class="option" onclick="check(this,'Magnetic field sensor')">Magnetic field sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Magnetic field sensor')">Gyroscope <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Magnetic field sensor')">Accelerometer <span class="symbol"></span></div>
+</div>
+
+<div class="quiz-box">
+  <div class="question">18. Door alarm activates when magnetic contact breaks.</div>
+  <div class="option" onclick="check(this,'Magnetic field sensor')">Magnetic field sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Magnetic field sensor')">Proximity sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Magnetic field sensor')">Infrared sensor <span class="symbol"></span></div>
+</div>
+
+<div class="quiz-box">
+  <div class="question">19. Irrigation system works when soil is dry.</div>
+  <div class="option" onclick="check(this,'Moisture sensor')">Moisture sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Moisture sensor')">Humidity sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Moisture sensor')">Level sensor <span class="symbol"></span></div>
+</div>
+
+<div class="quiz-box">
+  <div class="question">20. Greenhouse checks soil water content.</div>
+  <div class="option" onclick="check(this,'Moisture sensor')">Moisture sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Moisture sensor')">Flow sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Moisture sensor')">Humidity sensor <span class="symbol"></span></div>
+</div>
+
+<div class="quiz-box">
+  <div class="question">21. Swimming pool checks acidity.</div>
+  <div class="option" onclick="check(this,'pH sensor')">pH sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'pH sensor')">Gas sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'pH sensor')">Pressure sensor <span class="symbol"></span></div>
+</div>
+
+<div class="quiz-box">
+  <div class="question">22. Lab tests water quality using acidity.</div>
+  <div class="option" onclick="check(this,'pH sensor')">pH sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'pH sensor')">Level sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'pH sensor')">Humidity sensor <span class="symbol"></span></div>
+</div>
+
+<div class="quiz-box">
+  <div class="question">23. Car warns when tyre pressure is low.</div>
+  <div class="option" onclick="check(this,'Pressure sensor')">Pressure sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Pressure sensor')">Flow sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Pressure sensor')">Temperature sensor <span class="symbol"></span></div>
+</div>
+
+<div class="quiz-box">
+  <div class="question">24. Digital BP monitor measures artery pressure.</div>
+  <div class="option" onclick="check(this,'Pressure sensor')">Pressure sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Pressure sensor')">Flow sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Pressure sensor')">pH sensor <span class="symbol"></span></div>
+</div>
+
+<div class="quiz-box">
+  <div class="question">25. Phone screen turns OFF near ear.</div>
+  <div class="option" onclick="check(this,'Proximity sensor')">Proximity sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Proximity sensor')">Light sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Proximity sensor')">Infrared sensor <span class="symbol"></span></div>
+</div>
+
+<div class="quiz-box">
+  <div class="question">26. Automatic taps turn ON when hands are below.</div>
+  <div class="option" onclick="check(this,'Proximity sensor')">Proximity sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Proximity sensor')">Flow sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Proximity sensor')">Level sensor <span class="symbol"></span></div>
+</div>
+
+<div class="quiz-box">
+  <div class="question">27. AC turns ON when room gets hot.</div>
+  <div class="option" onclick="check(this,'Temperature sensor')">Temperature sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Temperature sensor')">Humidity sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Temperature sensor')">Light sensor <span class="symbol"></span></div>
+</div>
+
+<div class="quiz-box">
+  <div class="question">28. Refrigerator maintains fixed temperature.</div>
+  <div class="option" onclick="check(this,'Temperature sensor')">Temperature sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Temperature sensor')">Pressure sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this,'Temperature sensor')">Gas sensor <span class="symbol"></span></div>
+</div>
+
+<script>
+  function check(selected, correct){
+    const options = selected.parentElement.querySelectorAll('.option');
+    options.forEach(o=>{
+      o.classList.remove('correct','wrong');
+      o.querySelector('.symbol').innerText='';
+    });
+    if(selected.innerText.includes(correct)){
+      selected.classList.add('correct');
+      selected.querySelector('.symbol').innerText='✔';
+    }else{
+      selected.classList.add('wrong');
+      selected.querySelector('.symbol').innerText='✖';
+    }
+  }
+</script>
+
+</body>
+</html>
