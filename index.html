@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Automated Systems – Sensor Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6fb;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #4a148c;
+    }
+    .quiz-box {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .question {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .option {
+      border: 2px solid #ccc;
+      border-radius: 6px;
+      padding: 10px;
+      margin: 8px 0;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .option:hover {
+      background: #f1f1f1;
+    }
+    .correct {
+      border-color: green;
+      background: #e8f5e9;
+      color: green;
+    }
+    .wrong {
+      border-color: red;
+      background: #fdecea;
+      color: red;
+    }
+    .symbol {
+      float: right;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🔹 Automated Systems – Sensor Quiz</h1>
+
+<div class="quiz-box">
+  <div class="question">1. A robot wakes up only when someone claps their hands.</div>
+  <div class="option" onclick="check(this, 'Acoustic sensor')">Acoustic sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this, 'Acoustic sensor')">Accelerometer <span class="symbol"></span></div>
+  <div class="option" onclick="check(this, 'Acoustic sensor')">Light sensor <span class="symbol"></span></div>
+</div>
+
+<div class="quiz-box">
+  <div class="question">2. A mobile phone screen rotates when you tilt the phone.</div>
+  <div class="option" onclick="check(this, 'Accelerometer')">Accelerometer <span class="symbol"></span></div>
+  <div class="option" onclick="check(this, 'Accelerometer')">Proximity sensor <span class="symbol"></span></div>
+  <div class="option" onclick="check(this, 'Accelerometer')">Magnetic field sensor <span class="symbol"></span></div>
+</div>
+
+<script>
+  function check(selectedOption, correctAnswer) {
+    const options = selectedOption.parentElement.querySelectorAll('.option');
+
+    options.forEach(opt => {
+      opt.classList.remove('correct', 'wrong');
+      opt.querySelector('.symbol').innerText = '';
+    });
+
+    if (selectedOption.innerText.includes(correctAnswer)) {
+      selectedOption.classList.add('correct');
+      selectedOption.querySelector('.symbol').innerText = '✔';
+    } else {
+      selectedOption.classList.add('wrong');
+      selectedOption.querySelector('.symbol').innerText = '✖';
+    }
+  }
+</script>
+
+</body>
+</html>
